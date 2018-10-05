@@ -1,0 +1,3 @@
+= 参照
+
+https://www.slideshare.net/plusjune/ss-110416117[人生は短い、Python]
