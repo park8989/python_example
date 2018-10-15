@@ -11,3 +11,6 @@ for i in my_List: # for文をkey毎に順次回す
             print('OK')
         else:
             print('False')
+            
+# https://wikidocs.net/13 
+# 文字列説明、ハングル
