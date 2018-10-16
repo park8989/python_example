@@ -40,5 +40,18 @@ for person, number in itertools.product(people, numbers):
     else:    
       print(person, number)
       
-      
+ # 要素間の場合の数をリスト化する
+import itertools
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+people = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L')
+dataList = []
+for person, number in itertools.product(people, numbers):
+  dataList.extend([person + str(number)])
+  
+print(dataList)
+
+
+
+
+
  
