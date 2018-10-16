@@ -30,4 +30,15 @@ for i, j in zip(ups, downs):
 #甲寅, 乙卯, 丙辰, 丁巳, 戊午, 己未, 庚申, 辛酉, 壬戌, 癸亥
 
 
-
+# 要素間の場合の数を表示する
+import itertools
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+people = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L')
+for person, number in itertools.product(people, numbers):
+    if number != 10:
+       print(person, number, end=', ')
+    else:    
+      print(person, number)
+      
+      
+ 
