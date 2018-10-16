@@ -1,3 +1,21 @@
+# with as 文でOpne Read or Writeしたファイルを自動で閉じる
+with open("hello_world.txt", "r") as fileobj:
+    text = fileobj.read()
+    print(text)   
+
+
+# テキストファイルの中の文字列の単語リストを作る
+with open("hello_world.txt", "r") as fileobj:
+    text = fileobj.read()
+    wordlist = text.split(" ")                         #split メソッドで空白毎に区切ってリスト化する。
+    print(wordlist) 
+
+# テキストファイルの中の文字列を一行ずつ読み込む
+with open("hello_world.txt", "r") as fileobj:
+    text = fileobj.read()
+    lineList = text.split("\n")                         #split メソッドで空白毎に区切ってリスト化する。
+    print(lineList) 
+
 import pprint
 my_Data = "I have data\n that is money\n and gold"      #適当な文字列
 my_List = my_Data.split('\n')                           #上記の文字列を\nで分割し、リストを作る
@@ -27,6 +45,8 @@ if len(ok_Data) > 0:                                  # OKが入っていれば�
     print('OK')
 else:
     print('NG')
+
+ 
     
 # openpyxlを使うためには、Terminal mode　でインストールしてから使う
 # pip install openpyxl
