@@ -1,3 +1,9 @@
 = 参照
 
 https://www.slideshare.net/plusjune/ss-110416117[人生は短い、Python]
+
+----
+#現在のプラットフォームの文字コードを確認する内容を追加
+import locale
+locale.getpreferredencoding(False)
+----
