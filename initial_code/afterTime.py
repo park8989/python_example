@@ -3,14 +3,14 @@
 
 import datetime
 
-now = datetime.datetime.now() # 今の時間
-tomorrow_this_time = datetime.timedelta(days=2) #二日の日数　2 days, 0:00:00
+now = datetime.datetime.now()                                                         # 今の時間
+tomorrow_this_time = datetime.timedelta(days=2)                                       #二日の日数　2 days, 0:00:00
 print(now+tomorrow_this_time)
 
-after_hours_time = datetime.timedelta(hours=2) # 二時間の時間　2:00:00　
+after_hours_time = datetime.timedelta(hours=2)                                        # 二時間の時間　2:00:00　
 print(now+after_hours_time)
 
-after_minutes_time = datetime.timedelta(minutes=20) # 0:20:00
+after_minutes_time = datetime.timedelta(minutes=20)                                   # 0:20:00
 print(now+after_minutes_time)
 
 import calendar
